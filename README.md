@@ -1,4 +1,4 @@
-# Scraper
+# Simple Scraper
 
 You must install requests on pip.
 
