@@ -2,7 +2,7 @@
 
 ## Installing
 ```bash
-https://github.com/seweithotroyman/scraper.git
+git clone https://github.com/seweithotroyman/scraper.git
 cd scraper
 py -m venv env
 cd env
