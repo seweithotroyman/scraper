@@ -5,12 +5,12 @@ import requests
 from config import j_username, j_password, twofa_code
 
 def main():
-    url = 'https://example.com/login.action'
+    url = 'https://silacak.kemkes.go.id/dhis-web-commons-security/login.action'
 
     page_list = [
-        'https://example.com/page-1',
-        'https://example.com/page-2',
-        ]
+        'https://site.com/page-1',
+        'https://site.com/page-2'
+    ]
 
     with requests.session() as session:
 
@@ -19,11 +19,12 @@ def main():
             'j_password': j_password,
             'twofa_code': ''
         }
+        response = session.post(url, data=data)
         for url in page_list:
             page = session.get(url)
             print(page.text)
 
-        with open('ke_to_suspek.csv', 'a') as f:
+        with open('namafile.csv', 'a') as f:
             f.write(page.text + '\n')
 
 if __name__ == '__main__':
