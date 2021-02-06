@@ -1,7 +1,17 @@
 # Simple Scraper
 
-You must install requests on pip.
+## Installing
+```bash
+https://github.com/seweithotroyman/scraper.git
+cd scraper
+py -m venv env
+cd env
+cd Scripts
+activate
+```
+
+## You must install requests on pip.
 
 ```bash
-pip3 install requests
+pip install requests
 ```
